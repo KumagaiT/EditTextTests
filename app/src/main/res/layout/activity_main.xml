@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etPass1"
+        style="@style/MyEditText"
+        android:layout_marginBottom="315dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="128dp"
+        android:background="@drawable/focused_border"
+        android:ems="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/etPass2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/etPass2"
+        style="@style/MyEditText"
+        android:layout_marginBottom="315dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="128dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/etPass3"
+        app:layout_constraintStart_toEndOf="@+id/etPass1"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/etPass3"
+        style="@style/MyEditText"
+        android:layout_marginBottom="315dp"
+        android:background="@drawable/border"
+        android:layout_marginEnd="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="128dp"
+        android:ems="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/etPass4"
+        app:layout_constraintStart_toEndOf="@+id/etPass2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etPass4"
+        style="@style/MyEditText"
+        android:layout_marginBottom="315dp"
+        android:background="@drawable/border"
+        android:layout_marginEnd="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="128dp"
+        android:ems="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/etPass5"
+        app:layout_constraintStart_toEndOf="@+id/etPass3"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/etPass5"
+        style="@style/MyEditText"
+        android:layout_marginBottom="315dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="128dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/etPass6"
+        app:layout_constraintStart_toEndOf="@+id/etPass4"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/etPass6"
+        style="@style/MyEditText"
+        android:layout_marginBottom="315dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="128dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etPass5"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="16dp"
+        android:onClick="btClicked"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/etPass3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
